@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOT'@ISE — Infos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BANDEAU DE FÉLICITATIONS -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      🏆 Bravo aux SENIORS pour leur victoire 8 - 6 face aux JUNIORS ! 🏆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      🏆 Bravo aux SENIORS pour leur victoire 8 - 6 face aux JUNIORS ! 🏆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- ÉCRAN D'ACCÈS -->
+  <section id="gate" class="screen">
+    <div class="card">
+      <img src="assets/logo.png" alt="Logo FOOT'@ISE" class="logo" onerror="this.style.display='none'">
+      <h1 class="brand">FOOT'@ISE</h1>
+      <p class="sub">Page d'informations de l'équipe</p>
+
+      <form id="gate-form" autocomplete="off">
+        <label for="nom">Ton nom</label>
+        <input type="text" id="nom" placeholder="Ex : Prosper" required>
+
+        <label for="tel">Ton numéro de téléphone</label>
+        <input type="tel" id="tel" placeholder="Ex : 06 12 34 56 78" required>
+
+        <button type="submit">Accéder à la page</button>
+      </form>
+      <p class="hint">Réservé aux membres de l'équipe.</p>
+    </div>
+  </section>
+
+  <!-- PAGE "MAINTENANCE" -->
+  <section id="maintenance" class="screen hidden">
+    <div class="card">
+      <div class="gear">⚙️</div>
+      <h1>Site en maintenance</h1>
+      <p>Cette page est temporairement indisponible.<br>Merci de revenir un peu plus tard.</p>
+      <button type="button" class="back-btn" onclick="goBack()">← Retour</button>
+    </div>
+  </section>
+
+  <!-- PAGE D'INFOS -->
+  <section id="info" class="screen hidden">
+    <div class="card info-card">
+      <div class="top-icon">⚽</div>
+      <p class="eyebrow">INFOS !</p>
+      <h1 class="brand small">Bienvenue sur la page d'informations<br>de la famille FOOT'@ISE</h1>
+
+      <div class="announce">
+        <span class="baby-icon">👶</span>
+        <h2 class="red">Ben est papa pour une 2ème fois</h2>
+      </div>
+
+      <p class="body-text">
+        <span id="nom-affiche">Cher(e) membre</span>, notre frère Ben est papa d'un mignon garçon
+        depuis le mois de juillet.
+      </p>
+
+      <p class="body-text">
+        Une cagnotte généreuse est ouverte à cet effet 😊
+      </p>
+
+      <p class="body-text">
+        Tu peux participer auprès du trésorier <strong>Prosper</strong>, soit par espèces,
+        soit par <strong>Wero</strong> sur le numéro <strong class="phone">0744229366</strong>.
+      </p>
+
+      <p class="thanks">
+        Merci par avance pour ta contribution, <span id="nom-merci">!</span>
+      </p>
+
+      <div class="alert-box">
+        <p class="red bold">⚠️ ATTENTION : On garde le secret 🤫</p>
+      </div>
+
+      <p class="deadline">CLÔTURE : <strong>8 septembre 2026</strong></p>
+
+      <button type="button" class="back-btn" onclick="goBack()">← Retour</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
